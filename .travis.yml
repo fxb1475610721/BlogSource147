@@ -2,9 +2,9 @@
 node_js: node
 
 # 缓存node_modules文件夹，节省部署的时间
-cache:
- directories:
- - node_modules
+#cache:
+# directories:
+# - node_modules
 
 # 源码所在分支
 branches:
