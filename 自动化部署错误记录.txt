@@ -1,0 +1,66 @@
+GITHUB_TOKEN
+65d9b4f428f87f9bd9e
+577328725 3029885c911c5111bc9f4
+
+
+
+dpl.1
+Installing deploy dependencies
+Fetching: multipart-post-2.0.0.gem (100%)
+Successfully installed multipart-post-2.0.0
+Fetching: faraday-0.14.0.gem (100%)
+Successfully installed faraday-0.14.0
+Fetching: public_suffix-3.0.2.gem (100%)
+Successfully installed public_suffix-3.0.2
+Fetching: addressable-2.5.2.gem (100%)
+Successfully installed addressable-2.5.2
+Fetching: sawyer-0.8.1.gem (100%)
+Successfully installed sawyer-0.8.1
+Fetching: octokit-4.6.2.gem (100%)
+Successfully installed octokit-4.6.2
+Fetching: dpl-pages-1.9.0.gem (100%)
+Successfully installed dpl-pages-1.9.0
+7 gems installed
+!!! GitHub Pages support is experimental !!!
+dpl.2
+Preparing deploy
+Logged in as @fxb577328725 (fanxiaobin)
+dpl.3
+Deploying application
+/home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-pages-1.9.0/lib/dpl/provider/pages.rb:142:in `mkdir': File exists @ dir_s_mkdir - /tmp/d20180310-5694-15g51mt/work (Errno::EEXIST)
+	from /home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-pages-1.9.0/lib/dpl/provider/pages.rb:142:in `github_pull_or_init'
+	from /home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-pages-1.9.0/lib/dpl/provider/pages.rb:196:in `block in push_app'
+	from /home/travis/.rvm/rubies/ruby-2.2.7/lib/ruby/2.2.0/tmpdir.rb:88:in `mktmpdir'
+	from /home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-pages-1.9.0/lib/dpl/provider/pages.rb:191:in `push_app'
+	from /home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-1.9.0/lib/dpl/provider.rb:194:in `block in deploy'
+	from /home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-1.9.0/lib/dpl/cli.rb:41:in `fold'
+	from /home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-1.9.0/lib/dpl/provider.rb:194:in `deploy'
+	from /home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-1.9.0/lib/dpl/cli.rb:32:in `run'
+	from /home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-1.9.0/lib/dpl/cli.rb:7:in `run'
+	from /home/travis/.rvm/gems/ruby-2.2.7/gems/dpl-1.9.0/bin/dpl:5:in `<top (required)>'
+	from /home/travis/.rvm/gems/ruby-2.2.7/bin/dpl:23:in `load'
+	from /home/travis/.rvm/gems/ruby-2.2.7/bin/dpl:23:in `<main>'
+failed to deploy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

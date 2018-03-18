@@ -1,0 +1,38 @@
+﻿language: node_js  #设置语言
+node_js: node
+
+# 缓存node_modules文件夹，节省部署的时间
+#cache:
+#  directories:
+#    - node_modules
+
+# 源码所在分支
+branches:
+  only:
+  - master
+
+# 安装依赖
+install:
+    - npm install hexo-cli -g
+    - npm install hexo-generator-searchdb --save
+    - npm install hexo-generator-feed --save
+    - npm uninstall hexo-generator-index --save
+    - npm install hexo-generator-index-pin-top --save
+    - npm install
+
+
+# 执行的命令
+script:
+#	- ls -R	
+	- hexo clean
+	- hexo generate
+
+# 部署
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  local-dir: public
+  repo: fxb577328725/fxb577328725.github.io # 你的GitHub Page仓库地址
+  target-branch: master
