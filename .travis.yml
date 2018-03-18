@@ -27,10 +27,10 @@ script:
 
 # 部署
 deploy:
-provider: pages
-skip-cleanup: true
-github-token: $GITHUB_TOKEN # Set in travis-ci.org dashboard, marked secure
-keep-history: true
-local-dir: public
-repo: fxb1475610721/fxb1475610721.github.io # 你的GitHub Page仓库地址
-target-branch: master
+- provider: pages
+- skip-cleanup: true
+- github-token: $GITHUB_TOKEN # Set in travis-ci.org dashboard, marked secure
+- keep-history: true
+- local-dir: public
+- repo: fxb1475610721/fxb1475610721.github.io # 你的GitHub Page仓库地址
+- target-branch: master
